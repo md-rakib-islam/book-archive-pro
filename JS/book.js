@@ -14,8 +14,8 @@ const searchBook = () => {
     if (searchText === '' || searchText == parseInt(searchText) ){
         document.getElementById('numFound').innerText = `Not acceptable empty or number. 
         Please input right text`;
-        const searchCount =    document.getElementById('search-count');
-        searchCount.style.display='none';
+        // const searchCount =    document.getElementById('search-count');
+        // searchCount.style.display='none';
     }
     else{
         document.getElementById('numFound').textContent='';
@@ -33,6 +33,7 @@ const displaySearchResult = books =>{
     
     // Display searchBook Counting
     document.getElementById('search-count').innerHTML= `<p >Total items found: ${books.length}  </p>`;
+    
      
     if (books.length !== 0) {
         const searchResult = document.getElementById('search-result');
@@ -72,8 +73,8 @@ const displaySearchResult = books =>{
         document.getElementById('notFound').innerText = `Not available contant`;
         const searchResult = document.getElementById('search-result');
         searchResult.innerHTML= '';
-        const searchCount =    document.getElementById('search-count');
-        searchCount.style.display='none';
+        // const searchCount =    document.getElementById('search-count');
+        // searchCount.style.display='none';
     }
     
 
